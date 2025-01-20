@@ -39,16 +39,22 @@ The performance of each model is evaluated using the following metrics:
 
 ### Results
 #### Segmentation Task Evaluation:
-Models	Seg_Accuracy Score	Seg_Precision Score	Seg_Recall Score	Seg_F1 Score
-Logistic Regression	89.70	89.71	89.70	89.68
-Random Forest Classifier	99.74	99.74	99.74	99.74
-K Nearest Neighbor Classifier	98.22	98.23	98.22	98.22
+
+| Model                         | Seg_Accuracy Score | Seg_Precision Score | Seg_Recall Score | Seg_F1 Score |
+|-------------------------------|--------------------|---------------------|------------------|--------------|
+| Logistic Regression           | 91.85             | 91.86              | 91.85           | 91.84        |
+| Random Forest Classifier      | 99.90             | 99.90              | 99.90           | 99.90        |
+| K Nearest Neighbor Classifier | 98.27             | 98.28              | 98.27           | 98.28        |
+
 
 #### Churn Prediction Task Evaluation:
-Models	Churn_Accuracy Score	Churn_Precision Score	Churn_Recall Score	Churn_F1 Score
-Logistic Regression	99.84	99.85	99.84	99.84
-Random Forest Classifier	100.00	100.00	100.00	100.00
-K Nearest Neighbor Classifier	99.63	99.63	99.63	99.63
+
+| Model                         | Churn_Accuracy Score | Churn_Precision Score | Churn_Recall Score | Churn_F1 Score |
+|-------------------------------|----------------------|-----------------------|--------------------|----------------|
+| Logistic Regression           | 99.84               | 99.85                | 99.84              | 99.84           |
+| Random Forest Classifier       | 100.00              | 100.00               | 100.00             | 100.00          |
+| K Nearest Neighbor Classifier  | 99.63               | 99.63                | 99.63              | 99.63           |
+
 
 ### Installation
 #### Prerequisites
@@ -87,6 +93,7 @@ python evaluate_models.py
 
 ### Conclusion
 - Random Forest Classifier performs the best in both Segmentation and Churn Prediction, achieving near-perfect results across all metrics.
+
 - KNN and Logistic Regression also perform well, but Random Forest stands out as the best model for these tasks.
 
 
